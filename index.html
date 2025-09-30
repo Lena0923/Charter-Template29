@@ -167,131 +167,92 @@
     </section>
     <!-- Deliverables Table -->
     <section aria-labelledby="deliverables">
-      <h2 id="deliverables"><span>5</span> Deliverable &amp; Done</h2>
-      <table role="table" aria-describedby="deliverables-caption">
-        <caption id="deliverables-caption" class="sr-only">Deliverables table rendered exactly as provided</caption>
-        <thead>
-          <tr>
-            <th>Deliverable</th>
-            <th>Type</th>
-            <th>SMART Description</th>
-            <th>Definition of Done</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cybersecurity Portfolio Website</td>
-            <td>Tangible</td>
-            <td>Publish a professional portfolio website with clear navigation and at least three documented projects by Nov 15.</td>
-            <td>Site is live at a public URL, responsive on mobile and desktop, includes at least three project pages with descriptions and visuals, and provides links to the resume and contact.</td>
-          </tr>
-          <tr>
-            <td>Professional Resume &amp; LinkedIn Profile</td>
-            <td>Tangible</td>
-            <td>Create a one-page resume (PDF and web) and optimize the LinkedIn profile to match the resume, add certifications and skills, and link to the portfolio by Oct 25.</td>
-            <td>Resume is uploaded to the portfolio and downloadable as a PDF with no spelling or formatting errors. LinkedIn is updated (headline, About, experience, skills) and includes the portfolio link.</td>
-          </tr>
-          <tr>
-            <td>Documented Cybersecurity Projects</td>
-            <td>Intangible</td>
-            <td>Write case studies for at least three projects by Oct 30, including objectives, tools used (for example, Wireshark and Nmap), approach, results, and reflection.</td>
-            <td>Each project page includes goals, tools, steps, outcomes, screenshots or code snippets, and a short reflection.</td>
-          </tr>
-          <tr>
-            <td>Skills and Certifications Showcase</td>
-            <td>Outcome</td>
-            <td>List and present at least eight relevant skills and document current or earned certifications (for example, Security+) by Nov 5.</td>
-            <td>Skills section is visible with at least eight clearly defined skills. Certifications are shown with badges or proof, and items in progress are marked clearly.</td>
-          </tr>
-          <tr>
-            <td>Portfolio Review and Refinement</td>
-            <td>Intangible</td>
-            <td>Gather feedback from at least two peers or mentors by Nov 10, incorporate revisions, and complete final proofreading by Nov 20.</td>
-            <td>Feedback is documented, revisions are tracked in a short change log, and the final portfolio is polished and ready to share.</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="table-scroll" role="region" aria-label="WBS table">
-        <table class="wbs">
-          <thead>
-            <tr>
-              <th>WBS ID</th>
-              <th>Level</th>
-              <th>Task / Work Package Name</th>
-              <th>Duration</th>
-              <th>Dependencies</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Deliverable</td><td>Cybersecurity Portfolio Website</td><td>--</td><td>--</td></tr>
-            <tr><td>1.1</td><td>Deliverable</td><td>Portfolio Planning &amp; Setup</td><td>13</td><td>--</td></tr>
-            <tr><td>1.1.1</td><td>Work Package</td><td>Requirements &amp; Planning</td><td>7</td><td>--</td></tr>
-            <tr><td>1.1.1.1</td><td>Task</td><td>Define portfolio objectives</td><td>1</td><td>--</td></tr>
-            <tr><td>1.1.1.2</td><td>Task</td><td>Research cybersecurity portfolio best practices</td><td>2</td><td>1.1.1.1 – Define portfolio objectives</td></tr>
-            <tr><td>1.1.1.3</td><td>Task</td><td>Identify required components</td><td>2</td><td>1.1.1.2 – Research cybersecurity portfolio best practices</td></tr>
-            <tr><td>1.1.1.4</td><td>Task</td><td>Select target audience</td><td>1</td><td>1.1.1.3 – Identify required components</td></tr>
-            <tr><td>1.1.1.5</td><td>Task</td><td>Approve portfolio outline</td><td>1</td><td>1.1.1.4 – Select target audience</td></tr>
-            <tr><td>1.1.2</td><td>Work Package</td><td>Environment Setup</td><td>6</td><td>--</td></tr>
-            <tr><td>1.1.2.1</td><td>Task</td><td>Choose portfolio platform</td><td>1</td><td>--</td></tr>
-            <tr><td>1.1.2.2</td><td>Task</td><td>Prepare online portfolio space</td><td>2</td><td>1.1.2.1 – Choose portfolio platform</td></tr>
-            <tr><td>1.1.2.3</td><td>Task</td><td>Configure design theme/template</td><td>1</td><td>1.1.2.2 – Prepare online portfolio space</td></tr>
-            <tr><td>1.1.2.4</td><td>Task</td><td>Create project folder structure ||</td><td>2</td><td>1.1.2.3 – Configure design theme/template</td></tr>
-            <tr><td>1.1.2.5</td><td>Task</td><td>Version control setup (GitHub) ||</td><td>2</td><td>1.1.2.4 – Create project folder structure ||</td></tr>
-            <tr><td>1.2</td><td>Deliverable</td><td>Professional Resume &amp; LinkedIn Profile</td><td>--</td><td>--</td></tr>
-            <tr><td>1.2.1</td><td>Work Package</td><td>Resume Development</td><td>--</td><td>--</td></tr>
-            <tr><td>--</td><td>Task</td><td>Draft updated professional resume</td><td>--</td><td>--</td></tr>
-            <tr><td>1.2.1.1</td><td>Task</td><td>Format resume for both PDF &amp; online display</td><td>--</td><td>1.2.1 Draft updated professional resume</td></tr>
-            <tr><td>--</td><td>Task</td><td>Peer review of resume content</td><td>--</td><td>1.2.1.1 – Format resume for both PDF &amp; online display</td></tr>
-            <tr><td>1.2.1.2</td><td>Task</td><td>Tailor resume to entry-level cybersecurity roles</td><td>--</td><td>Peer review of resume content</td></tr>
-            <tr><td>1.2.1.3</td><td>Task</td><td>Finalize and upload resume to portfolio</td><td>--</td><td>1.2.1.2 – Tailor resume to entry-level cybersecurity roles</td></tr>
-            <tr><td>1.2.2</td><td>Work Package</td><td>LinkedIn Optimization</td><td>--</td><td>--</td></tr>
-            <tr><td>1.2.2.1</td><td>Task</td><td>Update profile summary and experience</td><td>--</td><td>1.2.1.3 – Finalize &amp; upload resume to portfolio</td></tr>
-            <tr><td>1.2.2.2</td><td>Task</td><td>Add certifications &amp; technical skills</td><td>--</td><td>Update LinkedIn profile summary and experience</td></tr>
-            <tr><td>1.2.2.3</td><td>Task</td><td>Align LinkedIn profile with resume content</td><td>--</td><td>Update profile summary &amp; experience</td></tr>
-            <tr><td>1.2.2.4</td><td>Task</td><td>Publish portfolio link on LinkedIn</td><td>--</td><td>Deploy portfolio online</td></tr>
-            <tr><td>1.3</td><td>Deliverable</td><td>Practical Experience Showcase</td><td>16</td><td>--</td></tr>
-            <tr><td>1.3.1</td><td>Work Package</td><td>Academic/Project Work</td><td>6</td><td>--</td></tr>
-            <tr><td>1.3.1.1</td><td>Task</td><td>Collect completed course projects</td><td>2</td><td>--</td></tr>
-            <tr><td>1.3.1.2</td><td>Task</td><td>Write project summaries</td><td>1</td><td>1.3.1.1 – Collect completed course projects</td></tr>
-            <tr><td>1.3.1.3</td><td>Task</td><td>Format code samples/screenshots ||</td><td>2</td><td>1.3.1.2 – Write project summaries</td></tr>
-            <tr><td>1.3.1.4</td><td>Task</td><td>Highlight problem-solving skills ||</td><td>2</td><td>1.3.1.3 – Format code samples/screenshots ||</td></tr>
-            <tr><td>1.3.1.5</td><td>Task</td><td>Upload course projects to portfolio</td><td>1</td><td>1.3.1.4 – Highlight problem-solving skills ||</td></tr>
-            <tr><td>1.3.2</td><td>Work Package</td><td>Hands-On Training &amp; Internships</td><td>10</td><td>--</td></tr>
-            <tr><td>1.3.2.1</td><td>Task</td><td>Document cybersecurity challenge activities</td><td>2</td><td>--</td></tr>
-            <tr><td>1.3.2.2</td><td>Task</td><td>Write reflections on security practice challenges</td><td>2</td><td>1.3.2.1 – Document lab exercises</td></tr>
-            <tr><td>1.3.2.3</td><td>Task</td><td>Summarize security labs and exercises</td><td>2</td><td>1.3.2.2 – Document cybersecurity challenge experience</td></tr>
-            <tr><td>1.3.2.4</td><td>Task</td><td>Record results from practice challenges</td><td>2</td><td>1.3.2.3 – Record internship experiences</td></tr>
-            <tr><td>1.3.2.5</td><td>Task</td><td>Capture lessons from cybersecurity challenges</td><td>2</td><td>1.3.2.4 – Reflect on practical learning outcomes</td></tr>
-            <tr><td>1.4</td><td>Deliverable</td><td>Portfolio Design &amp; Development</td><td>11</td><td>--</td></tr>
-            <tr><td>1.4.1</td><td>Work Package</td><td>Portfolio Content Development</td><td>6</td><td>--</td></tr>
-            <tr><td>1.4.1.1</td><td>Task</td><td>Draft homepage introduction</td><td>2</td><td>--</td></tr>
-            <tr><td>1.4.1.2</td><td>Task</td><td>Create 'About Me' section</td><td>1</td><td>1.4.1.1 – Draft homepage introduction</td></tr>
-            <tr><td>1.4.1.3</td><td>Task</td><td>Add certifications &amp; skills section</td><td>1</td><td>1.4.1.2 – Create 'About Me' section</td></tr>
-            <tr><td>1.4.1.4</td><td>Task</td><td>Add projects/experience showcase</td><td>1</td><td>1.4.1.3 – Add certifications &amp; skills section</td></tr>
-            <tr><td>1.4.1.5</td><td>Task</td><td>Add downloadable resume</td><td>1</td><td>1.4.1.4 – Add projects/experience showcase</td></tr>
-            <tr><td>1.4.2</td><td>Work Package</td><td>Website/Portfolio Technical Setup</td><td>5</td><td>--</td></tr>
-            <tr><td>1.4.2.1</td><td>Task</td><td>Configure navigation structure</td><td>1</td><td>--</td></tr>
-            <tr><td>1.4.2.2</td><td>Task</td><td>Implement responsive design</td><td>2</td><td>1.4.2.1 – Configure navigation structure</td></tr>
-            <tr><td>1.4.2.3</td><td>Task</td><td>Optimize for accessibility ||</td><td>1</td><td>1.4.2.2 – Implement responsive design</td></tr>
-            <tr><td>1.4.2.4</td><td>Task</td><td>Test cross-browser compatibility ||</td><td>1</td><td>1.4.2.3 – Optimize for accessibility ||</td></tr>
-            <tr><td>1.4.2.5</td><td>Task</td><td>Backup portfolio files</td><td>1</td><td>1.4.2.4 – Test cross-browser compatibility ||</td></tr>
-            <tr><td>1.5</td><td>Deliverable</td><td>Review, Testing &amp; Deployment</td><td>13</td><td>--</td></tr>
-            <tr><td>1.5.1</td><td>Work Package</td><td>Portfolio Review</td><td>7</td><td>--</td></tr>
-            <tr><td>1.5.1.1</td><td>Task</td><td>Self-review for accuracy</td><td>1</td><td>--</td></tr>
-            <tr><td>1.5.1.2</td><td>Task</td><td>Peer/mentor feedback session</td><td>3</td><td>1.5.1.1 – Self-review for accuracy</td></tr>
-            <tr><td>1.5.1.3</td><td>Task</td><td>Revise based on feedback</td><td>1</td><td>1.5.1.2 – Peer/mentor feedback session</td></tr>
-            <tr><td>1.5.1.4</td><td>Task</td><td>Final proofreading</td><td>1</td><td>1.5.1.3 – Revise based on feedback</td></tr>
-            <tr><td>1.5.1.5</td><td>Task</td><td>Approve final version</td><td>1</td><td>1.5.1.4 – Final proofreading</td></tr>
-            <tr><td>1.5.2</td><td>Work Package</td><td>Launch &amp; Promotion</td><td>6</td><td>--</td></tr>
-            <tr><td>1.5.2.1</td><td>Task</td><td>Deploy portfolio online</td><td>1</td><td>--</td></tr>
-            <tr><td>1.5.2.2</td><td>Task</td><td>Test deployment on multiple devices</td><td>2</td><td>1.5.2.1 – Deploy portfolio online</td></tr>
-            <tr><td>1.5.2.3</td><td>Task</td><td>Share portfolio link</td><td>1</td><td>1.5.2.2 – Test deployment on multiple devices</td></tr>
-            <tr><td>1.5.2.4</td><td>Task</td><td>Update LinkedIn/GitHub with portfolio</td><td>1</td><td>1.5.2.3 – Share portfolio link</td></tr>
-            <tr><td>1.5.2.5</td><td>Task</td><td>Maintain &amp; update portfolio regularly</td><td>1</td><td>1.5.2.4 – Update LinkedIn/GitHub with portfolio</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+      <table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Deliverable</th>
+      <th>Type</th>
+      <th>SMART Description</th>
+      <th>Definition of Done</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Portfolio Planning &amp; Setup</td>
+      <td>Tangible</td>
+      <td>Complete initial planning, environment setup, ...</td>
+      <td>Portfolio platform selected, online space configured ...</td>
+    </tr>
+    <tr>
+      <td>Professional Resume &amp; LinkedIn Profile</td>
+      <td>Tangible</td>
+      <td>Create an updated one-page resume (PDF and online)...</td>
+      <td>Resume uploaded to portfolio and downloadable link ...</td>
+    </tr>
+    <tr>
+      <td>Practical Experience Showcase</td>
+      <td>Intangible</td>
+      <td>Document and showcase at least three academic ...</td>
+      <td>Each project/internship entry includes summary ...</td>
+    </tr>
+    <tr>
+    <!-- WBS Table -->
+<section aria-labelledby="wbs">
+  <h2 id="wbs"><span>6</span> Work Breakdown Structure</h2>
+  <table role="table" aria-describedby="wbs-caption">
+    <caption id="wbs-caption" class="sr-only">
+      WBS table rendered exactly as provided
+    </caption>
+    <thead>
+      <tr>
+        <th>WBS ID</th>
+        <th>Level</th>
+        <th>Task/Work Package Name</th>
+        <th>Duration</th>
+        <th>Dependencies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>Deliverable</td>
+        <td>Portfolio Planning &amp; Setup</td>
+        <td>13</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>1.1.1</td>
+        <td>Work Package</td>
+        <td>Requirements &amp; Planning</td>
+        <td>7</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>Task</td>
+        <td>Define portfolio objectives</td>
+        <td>1</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>1.1.1.2</td>
+        <td>Task</td>
+        <td>Research cybersecurity portfolio best practices</td>
+        <td>2</td>
+        <td>1.1.1.1 – Define portfolio objectives</td>
+      </tr>
+      <tr>
+        <td>1.1.1.3</td>
+        <td>Task</td>
+        <td>Identify required components</td>
+        <td>2</td>
+        <td>1.1.1.2 – Research cybersecurity portfolio best practices</td>
+      </tr>
+      <!-- Continue adding rows for all items in your sheet -->
+    </tbody>
+  </table>
+</section>
+
 
     <!-- Budget Estimated -->
     <section aria-labelledby="budget">
@@ -373,11 +334,11 @@
       <div class="grid">
         <div class="col-6 pill">
           <h3>Methodology (Scrum)</h3>
-          <p>Work is organized in sprints with a Jira backlog and sprint board. The approach breaks the project into small increments, tracks progress, and enables continuous improvement and adaptation.</p>
+          <p>The project follows the Scrum framework, which organizes work into short, focused sprints. Each sprint is guided by a prioritized backlog in Jira and tracked on a sprint board, ensuring transparency and accountability. By breaking down the work into small, manageable increments, the team can deliver value continuously while maintaining the flexibility to adapt to new requirements or insights. Regular sprint reviews and retrospectives support continuous improvement, helping refine both the deliverables and the process itself..</p>
         </div>
         <div class="col-6 pill">
           <h3>Tool Selection (Jira)</h3>
-          <p>Jira supports Scrum and Kanban boards, backlog management, and dependency tracking. Using an industry tool builds good habits and prepares for real-world project work.</p>
+          <p>Jira is selected as the primary project management tool due to its robust support for Agile practices. It provides Scrum and Kanban boards, backlog management, and dependency tracking, making it well-suited for organizing complex work. The platform also encourages good project management habits, such as prioritization, progress tracking, and issue resolution, while aligning with industry standards. By using Jira, the team gains hands-on experience with a widely adopted professional tool, better preparing them for real-world project environments..</p>
         </div>
       </div>
     </section>
