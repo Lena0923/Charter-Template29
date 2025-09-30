@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cybersecurity Portfolio Project – Project Charter (Cleaned)</title>
+  <style>
+    :root{
+      --bg:#f7f7f5;--card:#ffffff;--ink:#1f2937;--muted:#6b7280;--accent:#165a32;
+      --accent2:#e9f5ec;--note:#fff6d8;--border:#e5e7eb;--blue:#e8f0fe;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif}
+    .wrap{max-width:1050px;margin:28px auto;padding:0 16px}
+    a.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    a.skip-link:focus{left:16px;top:10px;width:auto;height:auto;background:#000;color:#fff;padding:6px 10px;border-radius:8px;z-index:1000}
+    header{border-radius:18px;background:linear-gradient(135deg,#2f6b3a,#1f4c2b);
+      color:#fff;padding:38px 28px;margin-bottom:20px}
+    header h1{margin:0 0 6px;font-size:28px;letter-spacing:.3px}
+    header p{margin:0;color:#dbe7df;font-size:14px}
+    section{background:var(--card);border:1px solid var(--border);border-radius:16px;margin:16px 0;padding:18px}
+    h2{font-size:18px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+    h2 span{color:#fff;background:var(--accent);border-radius:10px;padding:2px 10px;font-size:12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .grid .col-4{grid-column:span 4}
+    .grid .col-6{grid-column:span 6}
+    .grid .col-12{grid-column:span 12}
+    @media (max-width: 820px){
+      .grid{grid-template-columns:repeat(6,1fr)}
+      .grid .col-4{grid-column:span 6}
+      .grid .col-6{grid-column:span 6}
+      .grid .col-12{grid-column:span 6}
+    }
+    .pill{background:var(--accent2);border:1px dashed #b8e0c7;border-radius:14px;padding:12px}
+    .note{background:var(--note);border:1px dashed #e0cf84;border-radius:14px;padding:12px}
+    .blue{background:var(--blue);border:1px dashed #b8c7f7;border-radius:14px;padding:12px}
+    table{width:100%;border-collapse:collapse;border:1px solid var(--border);overflow:hidden;border-radius:12px}
+    th,td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+    th{background:#f3f4f6;text-align:left;font-weight:600}
+    ul{margin:6px 0 0 18px}
+    small.muted{color:var(--muted)}
+    .tight p{margin:6px 0}
+    .imgbox{display:flex;gap:12px;flex-wrap:wrap}
+    .imgbox a{display:inline-block;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#fff;text-decoration:none;color:var(--accent)}
+    footer{color:var(--muted);font-size:13px;margin:18px 0}
+    /* screenshots layout */
+    .screenshots{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .screenshots figure{flex:1 1 320px;margin:0}
+    .screenshots img{width:100%;height:auto;border:1px solid var(--border);border-radius:12px}
+    .screenshots figcaption{font-size:12px;color:var(--muted);margin-top:6px;text-align:center}
+    /* diagram */
+    .diagram{display:block;text-align:center;margin-top:8px}
+    .diagram img{max-width:100%;height:auto;border:1px solid var(--border);border-radius:12px}
+    .diagram figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+    .diagram svg{max-width:100%;height:auto;display:block;margin:0 auto;border:1px solid var(--border);border-radius:12px}
+    /* WBS table styling */
+    .table-scroll{overflow:auto; max-height:520px; border:1px solid var(--border); border-radius:12px}
+    table.wbs{width:100%; border-collapse:collapse; font-size:14px}
+    table.wbs th, table.wbs td{padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top}
+    table.wbs thead th{position:sticky; top:0; background:#f3f4f6; z-index:1}
+    table.wbs tbody tr:nth-child(even){background:#fafafa}
+    table.wbs td:first-child{white-space:nowrap}
+
+    /* print-friendly */
+    @media print{
+      body{background:#fff}
+      header{background:#1f4c2b;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      h2 span{background:var(--accent);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      a{color:#000;text-decoration:none}
+      section{page-break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap" id="main">
+    <header role="banner">
+      <h1>Cybersecurity Portfolio Project</h1>
+      <p>Project Charter • Managing IT Projects</p>
+    </header>
+
+    <!-- Student Information -->
+    <section aria-labelledby="student-info">
+      <h2 id="student-info"><span>Student</span> Information</h2>
+      <div class="grid">
+        <div class="col-4 pill"><strong>Student Name:</strong><br/>Fatima Zahra Anammi</div>
+        <div class="col-4 pill"><strong>Course:</strong><br/>Managing IT Projects</div>
+        <div class="col-4 pill"><strong>Semester:</strong><br/>Fall 2025</div>
+      </div>
+    </section>
+
+    <!-- Project Title & Description -->
+    <section aria-labelledby="title-desc">
+      <h2 id="title-desc"><span>1</span> Project Title &amp; Description</h2>
+      <div class="note">
+        <p class="tight"><strong>Goal:</strong> Develop a professional cybersecurity portfolio that highlights skills, certifications, and hands-on experience to support landing an entry-level role.</p>
+        <p class="tight">The portfolio will feature completed course projects, preparation for the CompTIA Security+ certification, and documentation of hands-on training or internship experiences. By presenting a clear record of technical knowledge and industry-relevant accomplishments, it will showcase job readiness to potential employers and internship providers.</p>
+      </div>
+    </section>
+
+    <!-- Vision, Mission & Strategy -->
+    <section aria-labelledby="vision-mission">
+      <h2 id="vision-mission"><span>2</span> Vision, Mission &amp; Strategy Alignment</h2>
+      <div class="grid">
+        <div class="col-12 pill">
+          <p><strong>Personal Mission Connection:</strong> To demonstrate job-ready cybersecurity skills through completed projects, hands-on training, and industry certifications—presented in a professional portfolio that proves capability and appeals to prospective employers and internship providers.</p>
+          <p><strong>Vision Alignment:</strong> Completing this project moves me toward my long-term vision of becoming a skilled cybersecurity professional with a strong portfolio that demonstrates practical experience and recognized certifications.</p>
+          <p><strong>Strategic Goal Support:</strong> This project advances my strategic goals of gaining industry-relevant credentials, developing hands-on experience, and positioning myself competitively for internships and future opportunities in cybersecurity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Case -->
+    <section aria-labelledby="business-case">
+      <h2 id="business-case"><span>3</span> Business Case &amp; Justification</h2>
+      <div class="grid">
+        <div class="col-6 pill">
+          <h3>Professional Value</h3>
+          <p>This project strengthens my profile through Security+ preparation, practical work, and a polished portfolio to share with employers and internship providers. It also supports networking and real-world experience through hands-on projects.</p>
+        </div>
+        <div class="col-6 pill">
+          <h3>Personal Value</h3>
+          <p>It builds problem-solving and critical-thinking skills, grows confidence applying cybersecurity concepts, and provides a sense of achievement by hitting clear milestones on a timeline.</p>
+        </div>
+        <div class="col-12 blue">
+          <h3>Learning Outcomes</h3>
+          <ul>
+            <li>Develop technical proficiency in cybersecurity concepts and tools.</li>
+            <li>Practice project management by planning and tracking portfolio progress.</li>
+            <li>Improve networking and understand industry standards and expectations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- High-Level Scope -->
+    <section aria-labelledby="scope">
+      <h2 id="scope"><span>4</span> High-Level Scope</h2>
+      <div class="grid">
+        <div class="col-6 pill">
+          <h3>✅ In Scope (Semester)</h3>
+          <ul>
+            <li>Research and prepare for CompTIA Security+.</li>
+            <li>Complete cybersecurity-focused course projects.</li>
+            <li>Organize work into a professional portfolio website.</li>
+            <li>Identify and apply for internships or hands-on training.</li>
+            <li>Create a portfolio summary of achievements and competencies.</li>
+          </ul>
+        </div>
+        <div class="col-6 pill">
+          <h3>🗺️ Roadmap (≤ 6 Months)</h3>
+          <ul>
+            <li>Earn the CompTIA Security+ certification.</li>
+            <li>Add practical labs/simulations to the portfolio.</li>
+            <li>Pursue advanced, real-world security projects.</li>
+            <li>Add additional cybersecurity certifications.</li>
+          </ul>
+        </div>
+        <div class="col-12 blue">
+          <h3>❌ Out of Scope</h3>
+          <ul>
+            <li>Building full production-grade cybersecurity software/tools.</li>
+            <li>Teaching or formally training others in cybersecurity.</li>
+            <li>Long-term research beyond the semester timeline.</li>
+            <li>Pursuing unrelated IT certifications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Deliverables Table -->
+    <section aria-labelledby="deliverables">
+      <h2 id="deliverables"><span>5</span> Deliverable &amp; Done</h2>
+      <table role="table" aria-describedby="deliverables-caption">
+        <caption id="deliverables-caption" class="sr-only">Deliverables table rendered exactly as provided</caption>
+        <thead>
+          <tr>
+            <th>Deliverable</th>
+            <th>Type</th>
+            <th>SMART Description</th>
+            <th>Definition of Done</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cybersecurity Portfolio Website</td>
+            <td>Tangible</td>
+            <td>Publish a professional portfolio website with clear navigation and at least three documented projects by Nov 15.</td>
+            <td>Site is live at a public URL, responsive on mobile and desktop, includes at least three project pages with descriptions and visuals, and provides links to the resume and contact.</td>
+          </tr>
+          <tr>
+            <td>Professional Resume &amp; LinkedIn Profile</td>
+            <td>Tangible</td>
+            <td>Create a one-page resume (PDF and web) and optimize the LinkedIn profile to match the resume, add certifications and skills, and link to the portfolio by Oct 25.</td>
+            <td>Resume is uploaded to the portfolio and downloadable as a PDF with no spelling or formatting errors. LinkedIn is updated (headline, About, experience, skills) and includes the portfolio link.</td>
+          </tr>
+          <tr>
+            <td>Documented Cybersecurity Projects</td>
+            <td>Intangible</td>
+            <td>Write case studies for at least three projects by Oct 30, including objectives, tools used (for example, Wireshark and Nmap), approach, results, and reflection.</td>
+            <td>Each project page includes goals, tools, steps, outcomes, screenshots or code snippets, and a short reflection.</td>
+          </tr>
+          <tr>
+            <td>Skills and Certifications Showcase</td>
+            <td>Outcome</td>
+            <td>List and present at least eight relevant skills and document current or earned certifications (for example, Security+) by Nov 5.</td>
+            <td>Skills section is visible with at least eight clearly defined skills. Certifications are shown with badges or proof, and items in progress are marked clearly.</td>
+          </tr>
+          <tr>
+            <td>Portfolio Review and Refinement</td>
+            <td>Intangible</td>
+            <td>Gather feedback from at least two peers or mentors by Nov 10, incorporate revisions, and complete final proofreading by Nov 20.</td>
+            <td>Feedback is documented, revisions are tracked in a short change log, and the final portfolio is polished and ready to share.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-scroll" role="region" aria-label="WBS table">
+        <table class="wbs">
+          <thead>
+            <tr>
+              <th>WBS ID</th>
+              <th>Level</th>
+              <th>Task / Work Package Name</th>
+              <th>Duration</th>
+              <th>Dependencies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Deliverable</td><td>Cybersecurity Portfolio Website</td><td>--</td><td>--</td></tr>
+            <tr><td>1.1</td><td>Deliverable</td><td>Portfolio Planning &amp; Setup</td><td>13</td><td>--</td></tr>
+            <tr><td>1.1.1</td><td>Work Package</td><td>Requirements &amp; Planning</td><td>7</td><td>--</td></tr>
+            <tr><td>1.1.1.1</td><td>Task</td><td>Define portfolio objectives</td><td>1</td><td>--</td></tr>
+            <tr><td>1.1.1.2</td><td>Task</td><td>Research cybersecurity portfolio best practices</td><td>2</td><td>1.1.1.1 – Define portfolio objectives</td></tr>
+            <tr><td>1.1.1.3</td><td>Task</td><td>Identify required components</td><td>2</td><td>1.1.1.2 – Research cybersecurity portfolio best practices</td></tr>
+            <tr><td>1.1.1.4</td><td>Task</td><td>Select target audience</td><td>1</td><td>1.1.1.3 – Identify required components</td></tr>
+            <tr><td>1.1.1.5</td><td>Task</td><td>Approve portfolio outline</td><td>1</td><td>1.1.1.4 – Select target audience</td></tr>
+            <tr><td>1.1.2</td><td>Work Package</td><td>Environment Setup</td><td>6</td><td>--</td></tr>
+            <tr><td>1.1.2.1</td><td>Task</td><td>Choose portfolio platform</td><td>1</td><td>--</td></tr>
+            <tr><td>1.1.2.2</td><td>Task</td><td>Prepare online portfolio space</td><td>2</td><td>1.1.2.1 – Choose portfolio platform</td></tr>
+            <tr><td>1.1.2.3</td><td>Task</td><td>Configure design theme/template</td><td>1</td><td>1.1.2.2 – Prepare online portfolio space</td></tr>
+            <tr><td>1.1.2.4</td><td>Task</td><td>Create project folder structure ||</td><td>2</td><td>1.1.2.3 – Configure design theme/template</td></tr>
+            <tr><td>1.1.2.5</td><td>Task</td><td>Version control setup (GitHub) ||</td><td>2</td><td>1.1.2.4 – Create project folder structure ||</td></tr>
+            <tr><td>1.2</td><td>Deliverable</td><td>Professional Resume &amp; LinkedIn Profile</td><td>--</td><td>--</td></tr>
+            <tr><td>1.2.1</td><td>Work Package</td><td>Resume Development</td><td>--</td><td>--</td></tr>
+            <tr><td>--</td><td>Task</td><td>Draft updated professional resume</td><td>--</td><td>--</td></tr>
+            <tr><td>1.2.1.1</td><td>Task</td><td>Format resume for both PDF &amp; online display</td><td>--</td><td>1.2.1 Draft updated professional resume</td></tr>
+            <tr><td>--</td><td>Task</td><td>Peer review of resume content</td><td>--</td><td>1.2.1.1 – Format resume for both PDF &amp; online display</td></tr>
+            <tr><td>1.2.1.2</td><td>Task</td><td>Tailor resume to entry-level cybersecurity roles</td><td>--</td><td>Peer review of resume content</td></tr>
+            <tr><td>1.2.1.3</td><td>Task</td><td>Finalize and upload resume to portfolio</td><td>--</td><td>1.2.1.2 – Tailor resume to entry-level cybersecurity roles</td></tr>
+            <tr><td>1.2.2</td><td>Work Package</td><td>LinkedIn Optimization</td><td>--</td><td>--</td></tr>
+            <tr><td>1.2.2.1</td><td>Task</td><td>Update profile summary and experience</td><td>--</td><td>1.2.1.3 – Finalize &amp; upload resume to portfolio</td></tr>
+            <tr><td>1.2.2.2</td><td>Task</td><td>Add certifications &amp; technical skills</td><td>--</td><td>Update LinkedIn profile summary and experience</td></tr>
+            <tr><td>1.2.2.3</td><td>Task</td><td>Align LinkedIn profile with resume content</td><td>--</td><td>Update profile summary &amp; experience</td></tr>
+            <tr><td>1.2.2.4</td><td>Task</td><td>Publish portfolio link on LinkedIn</td><td>--</td><td>Deploy portfolio online</td></tr>
+            <tr><td>1.3</td><td>Deliverable</td><td>Practical Experience Showcase</td><td>16</td><td>--</td></tr>
+            <tr><td>1.3.1</td><td>Work Package</td><td>Academic/Project Work</td><td>6</td><td>--</td></tr>
+            <tr><td>1.3.1.1</td><td>Task</td><td>Collect completed course projects</td><td>2</td><td>--</td></tr>
+            <tr><td>1.3.1.2</td><td>Task</td><td>Write project summaries</td><td>1</td><td>1.3.1.1 – Collect completed course projects</td></tr>
+            <tr><td>1.3.1.3</td><td>Task</td><td>Format code samples/screenshots ||</td><td>2</td><td>1.3.1.2 – Write project summaries</td></tr>
+            <tr><td>1.3.1.4</td><td>Task</td><td>Highlight problem-solving skills ||</td><td>2</td><td>1.3.1.3 – Format code samples/screenshots ||</td></tr>
+            <tr><td>1.3.1.5</td><td>Task</td><td>Upload course projects to portfolio</td><td>1</td><td>1.3.1.4 – Highlight problem-solving skills ||</td></tr>
+            <tr><td>1.3.2</td><td>Work Package</td><td>Hands-On Training &amp; Internships</td><td>10</td><td>--</td></tr>
+            <tr><td>1.3.2.1</td><td>Task</td><td>Document cybersecurity challenge activities</td><td>2</td><td>--</td></tr>
+            <tr><td>1.3.2.2</td><td>Task</td><td>Write reflections on security practice challenges</td><td>2</td><td>1.3.2.1 – Document lab exercises</td></tr>
+            <tr><td>1.3.2.3</td><td>Task</td><td>Summarize security labs and exercises</td><td>2</td><td>1.3.2.2 – Document cybersecurity challenge experience</td></tr>
+            <tr><td>1.3.2.4</td><td>Task</td><td>Record results from practice challenges</td><td>2</td><td>1.3.2.3 – Record internship experiences</td></tr>
+            <tr><td>1.3.2.5</td><td>Task</td><td>Capture lessons from cybersecurity challenges</td><td>2</td><td>1.3.2.4 – Reflect on practical learning outcomes</td></tr>
+            <tr><td>1.4</td><td>Deliverable</td><td>Portfolio Design &amp; Development</td><td>11</td><td>--</td></tr>
+            <tr><td>1.4.1</td><td>Work Package</td><td>Portfolio Content Development</td><td>6</td><td>--</td></tr>
+            <tr><td>1.4.1.1</td><td>Task</td><td>Draft homepage introduction</td><td>2</td><td>--</td></tr>
+            <tr><td>1.4.1.2</td><td>Task</td><td>Create 'About Me' section</td><td>1</td><td>1.4.1.1 – Draft homepage introduction</td></tr>
+            <tr><td>1.4.1.3</td><td>Task</td><td>Add certifications &amp; skills section</td><td>1</td><td>1.4.1.2 – Create 'About Me' section</td></tr>
+            <tr><td>1.4.1.4</td><td>Task</td><td>Add projects/experience showcase</td><td>1</td><td>1.4.1.3 – Add certifications &amp; skills section</td></tr>
+            <tr><td>1.4.1.5</td><td>Task</td><td>Add downloadable resume</td><td>1</td><td>1.4.1.4 – Add projects/experience showcase</td></tr>
+            <tr><td>1.4.2</td><td>Work Package</td><td>Website/Portfolio Technical Setup</td><td>5</td><td>--</td></tr>
+            <tr><td>1.4.2.1</td><td>Task</td><td>Configure navigation structure</td><td>1</td><td>--</td></tr>
+            <tr><td>1.4.2.2</td><td>Task</td><td>Implement responsive design</td><td>2</td><td>1.4.2.1 – Configure navigation structure</td></tr>
+            <tr><td>1.4.2.3</td><td>Task</td><td>Optimize for accessibility ||</td><td>1</td><td>1.4.2.2 – Implement responsive design</td></tr>
+            <tr><td>1.4.2.4</td><td>Task</td><td>Test cross-browser compatibility ||</td><td>1</td><td>1.4.2.3 – Optimize for accessibility ||</td></tr>
+            <tr><td>1.4.2.5</td><td>Task</td><td>Backup portfolio files</td><td>1</td><td>1.4.2.4 – Test cross-browser compatibility ||</td></tr>
+            <tr><td>1.5</td><td>Deliverable</td><td>Review, Testing &amp; Deployment</td><td>13</td><td>--</td></tr>
+            <tr><td>1.5.1</td><td>Work Package</td><td>Portfolio Review</td><td>7</td><td>--</td></tr>
+            <tr><td>1.5.1.1</td><td>Task</td><td>Self-review for accuracy</td><td>1</td><td>--</td></tr>
+            <tr><td>1.5.1.2</td><td>Task</td><td>Peer/mentor feedback session</td><td>3</td><td>1.5.1.1 – Self-review for accuracy</td></tr>
+            <tr><td>1.5.1.3</td><td>Task</td><td>Revise based on feedback</td><td>1</td><td>1.5.1.2 – Peer/mentor feedback session</td></tr>
+            <tr><td>1.5.1.4</td><td>Task</td><td>Final proofreading</td><td>1</td><td>1.5.1.3 – Revise based on feedback</td></tr>
+            <tr><td>1.5.1.5</td><td>Task</td><td>Approve final version</td><td>1</td><td>1.5.1.4 – Final proofreading</td></tr>
+            <tr><td>1.5.2</td><td>Work Package</td><td>Launch &amp; Promotion</td><td>6</td><td>--</td></tr>
+            <tr><td>1.5.2.1</td><td>Task</td><td>Deploy portfolio online</td><td>1</td><td>--</td></tr>
+            <tr><td>1.5.2.2</td><td>Task</td><td>Test deployment on multiple devices</td><td>2</td><td>1.5.2.1 – Deploy portfolio online</td></tr>
+            <tr><td>1.5.2.3</td><td>Task</td><td>Share portfolio link</td><td>1</td><td>1.5.2.2 – Test deployment on multiple devices</td></tr>
+            <tr><td>1.5.2.4</td><td>Task</td><td>Update LinkedIn/GitHub with portfolio</td><td>1</td><td>1.5.2.3 – Share portfolio link</td></tr>
+            <tr><td>1.5.2.5</td><td>Task</td><td>Maintain &amp; update portfolio regularly</td><td>1</td><td>1.5.2.4 – Update LinkedIn/GitHub with portfolio</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Budget Estimated -->
+    <section aria-labelledby="budget">
+      <h2 id="budget"><span>5</span> Budget Estimated</h2>
+      <div class="table-scroll" role="region" aria-label="Budget table">
+        <table class="wbs">
+          <thead>
+            <tr>
+              <th>Cost Item</th>
+              <th>Quantity/Hrs</th>
+              <th>Rate/Price</th>
+              <th>Total Cost</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="5"><strong>LABOR COSTS</strong></td></tr>
+            <tr><td>Developer</td><td>80</td><td>35</td><td>2800</td><td>Portfolio site setup, coding, deployment</td></tr>
+            <tr><td>Designer</td><td>50</td><td>30</td><td>1500</td><td>UI/UX, themes, layouts</td></tr>
+            <tr><td>Project Manager</td><td>60</td><td>25</td><td>1500</td><td>Planning, reviews, coordination</td></tr>
+            <tr><td>Analyst/Writer</td><td>40</td><td>28</td><td>1120</td><td>Documenting tools, training, reflections</td></tr>
+            <tr><td><strong>LABOR SUBTOTAL</strong></td><td></td><td></td><td>6920</td><td></td></tr>
+
+            <tr><td colspan="5"><strong>EQUIPMENT/SOFTWARE</strong></td></tr>
+            <tr><td>Domain &amp; Hosting (1 yr)</td><td>1</td><td>120</td><td>48</td><td>Portfolio hosting + domain</td></tr>
+            <tr><td>GitHub Pro</td><td>1</td><td>48</td><td>48</td><td>Version control &amp; repo management</td></tr>
+            <tr><td>Office/Docs License</td><td>1</td><td>60</td><td>60</td><td>Docs &amp; collaboration tools</td></tr>
+            <tr><td><strong>EQUIPMENT SUBTOTAL</strong></td><td></td><td></td><td>228</td><td></td></tr>
+
+            <tr><td colspan="5"><strong>MATERIALS</strong></td></tr>
+            <tr><td>Stock Images/Icons</td><td>1</td><td>50</td><td>30</td><td>Graphics &amp; portfolio visuals</td></tr>
+            <tr><td>Training/Lab Resources</td><td>1</td><td>800</td><td>800</td><td>Practice cybersecurity labs</td></tr>
+            <tr><td>Documentation Assets</td><td>1</td><td>30</td><td>30</td><td>Templates &amp; documentation</td></tr>
+            <tr><td><strong>MATERIALS SUBTOTAL</strong></td><td></td><td></td><td>880</td><td></td></tr>
+
+            <tr><td colspan="5"><strong>SERVICES</strong></td></tr>
+            <tr><td>Cloud Hosting</td><td>1</td><td>75</td><td>150</td><td>Semester cloud hosting (AWS/Netlify)</td></tr>
+            <tr><td>Third-party APIs</td><td>1</td><td>40</td><td>40</td><td>Optional API integration</td></tr>
+            <tr><td>Security Assessment</td><td>1</td><td>150</td><td>150</td><td>External security testing</td></tr>
+            <tr><td><strong>SERVICES SUBTOTAL</strong></td><td></td><td></td><td>265</td><td></td></tr>
+
+            <tr><td><strong>SUBTOTAL DIRECT COSTS</strong></td><td></td><td></td><td>8293</td><td>Sum of all categories</td></tr>
+            <tr><td><strong>Contingency (20%)</strong></td><td></td><td></td><td>1658.6</td><td>Risk reserve</td></tr>
+            <tr><td><strong>TOTAL PROJECT BUDGET</strong></td><td></td><td></td><td>9951.6</td><td>Final project budget</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Stakeholder Register -->
+    <section aria-labelledby="stakeholders">
+      <h2 id="stakeholders"><span>5</span> Stakeholder Register</h2>
+      <table role="table">
+        <thead>
+          <tr>
+            <th>Stakeholder</th><th>Category</th><th>Power</th><th>Interest</th><th>Engagement Strategy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Student (Me)</td><td>Internal</td><td>High</td><td>High</td><td>Actively manage progress and continuously improve to meet goals.</td></tr>
+          <tr><td>Academic Advisor</td><td>Internal</td><td>Medium</td><td>High</td><td>Share progress; request advice and guidance.</td></tr>
+          <tr><td>Career Services Office</td><td>Internal</td><td>Medium</td><td>High</td><td>Resume reviews, portfolio workshops, career counseling.</td></tr>
+          <tr><td>Potential Employers</td><td>External</td><td>High</td><td>High</td><td>Tailor portfolio content to expectations; share relevant work samples.</td></tr>
+          <tr><td>Peers/Colleagues</td><td>Internal</td><td>Low</td><td>Medium</td><td>Share progress; request peer feedback on clarity/design.</td></tr>
+          <tr><td>Faculty Members</td><td>Internal</td><td>Medium</td><td>High</td><td>Seek mentorship and constructive feedback on quality and alignment.</td></tr>
+          <tr><td>Alumni Network</td><td>External</td><td>Medium</td><td>Medium</td><td>Network periodically; request feedback from CIS alumni.</td></tr>
+          <tr><td>Professional Associations</td><td>External</td><td>Medium</td><td>Medium</td><td>Monitor standards, trends, and showcases.</td></tr>
+          <tr><td>Regulatory/Accreditation Body</td><td>Regulatory</td><td>High</td><td>Low</td><td>Ensure compliance with standards; monitor requirements.</td></tr>
+          <tr><td>Family/Support System</td><td>External</td><td>Low</td><td>High</td><td>Update on milestones; request support and encouragement.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Methodology & Tools -->
+    <section aria-labelledby="method-tools">
+      <h2 id="method-tools"><span>6</span> Project Methodology &amp; Tools</h2>
+      <div class="grid">
+        <div class="col-6 pill">
+          <h3>Methodology (Scrum)</h3>
+          <p>Work is organized in sprints with a Jira backlog and sprint board. The approach breaks the project into small increments, tracks progress, and enables continuous improvement and adaptation.</p>
+        </div>
+        <div class="col-6 pill">
+          <h3>Tool Selection (Jira)</h3>
+          <p>Jira supports Scrum and Kanban boards, backlog management, and dependency tracking. Using an industry tool builds good habits and prepares for real-world project work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diagrams & Evidence -->
+    <section aria-labelledby="diagram">
+      <h2 id="diagram"><span>7</span> Diagram &amp; Evidence</h2>
+      <figure class="diagram">
+        <figcaption style="margin-bottom:8px;">Figure: Project Methodology Diagram.</figcaption>
+        <div>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8YAAADECAYAAABdsThXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADDFSURBVHhe7d0HnBTl/cfx3xXujl5EFFBExYolVpCgYoklNuz+7YoaFY1GTaKxxR... (FULL BASE64 STRING HERE) ..." alt="Cybersecurity Portfolio Project Methodology Diagram" />
+        </div>
+      </figure>
+    </section>
+
+    <!-- Screenshots -->
+    <section aria-labelledby="shots">
+      <h2 id="shots"><span>8</span> Screenshots — Project Tool in Use</h2>
+      <div class="screenshots">
+        <figure>
+          <img src="https://lena0923.github.io/screenshots/epics.png" alt="Epics list with statuses" />
+          <figcaption>Epics — list view with status and updates</figcaption>
+        </figure>
+        <figure>
+          <img src="https://lena0923.github.io/screenshots/sprint.png" alt="Sprint timeline view" />
+          <figcaption>Sprint timeline — schedule across months</figcaption>
+        </figure>
+        <figure>
+          <img src="https://lena0923.github.io/screenshots/status.png" alt="Status overview donut chart" />
+          <figcaption>Status overview — progress donut (To Do / In Progress / Done)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer role="contentinfo">
+      <p><small class="muted">© 2025 Fatima Zahra Anammi • Draft v2 (cleaned for accessibility, responsiveness, and print)</small></p>
+    </footer>
+  </div>
+</body>
+</html>
