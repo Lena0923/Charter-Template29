@@ -167,147 +167,150 @@
     </section>
     <!-- Deliverables Table -->
     <!-- Deliverables Table -->
+        <!-- Table 1 — Deliverables & Done (collapsible) -->
 <section aria-labelledby="deliverables">
- <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Charter Tables Preview</title>
-<style>
-  :root {
-    --bg: #0b1020;
-    --card: #121933;
-    --text: #e6ecff;
-    --muted: #a6b0cf;
-    --accent: #7aa2ff;
-    --border: #2a3460;
-  }
-  html, body { background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans; }
-  .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
-  h1 { font-size: 1.6rem; margin: 0 0 1rem; color: var(--text); }
-  .note { color: var(--muted); margin-bottom: 2rem; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 1rem; margin: 1rem 0 2rem; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
-  h2 { font-size: 1.2rem; margin: 0 0 .75rem; display: flex; gap: .5rem; align-items: center; }
-  h2 .kicker { display:inline-block; width: .6rem; height: 1.2rem; background: var(--accent); border-radius: 6px; }
-  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
-  thead th { text-align: left; color: var(--text); border-bottom: 2px solid var(--border); padding: .6rem .5rem; }
-  tbody td { vertical-align: top; color: var(--muted); border-bottom: 1px solid var(--border); padding: .6rem .5rem; }
-  tbody tr:hover td { background: rgba(122,162,255,.06); color: var(--text); }
-  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,1px,1px); white-space: nowrap; border: 0; }
-  @media (max-width: 720px) {
-    table, thead, tbody, th, td, tr { display: block; }
-    thead { display: none; }
-    tbody tr { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; }
-    tbody td { border: none; border-bottom: 1px dashed var(--border); }
-    tbody td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text); margin-bottom: .25rem; }
-  }
-</style>
-</head>
-<body>
-  <div class="container">
-    <h1>Charter Tables Preview</h1>
-    <p class="note">This preview shows your two full tables in the correct order: Deliverables first, then Work Breakdown Structure.</p>
-<!-- 5 Deliverable & Done -->
-<section aria-labelledby="deliverables">
-  <h2 id="deliverables">5 Deliverable &amp; Done</h2>
-  <table role="table" aria-describedby="deliverables-caption" border="1" cellpadding="8" cellspacing="0">
-    <caption id="deliverables-caption" class="sr-only">Deliverables table rendered exactly as provided</caption>
-    <thead>
-      <tr>
-        <th>Deliverable</th>
-        <th>Type</th>
-        <th>SMART Description</th>
-        <th>Definition of Done</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Portfolio Planning &amp; Setup</td>
-        <td>Tangible</td>
-        <td>Complete initial planning, environment setup, and roadmap, including tool selection and repository structure by end of week 2.</td>
-        <td>Portfolio platform selected, online space configured, folder structure created, and initial README/overview published.</td>
-      </tr>
-      <tr>
-        <td>Professional Resume &amp; LinkedIn Profile</td>
-        <td>Tangible</td>
-        <td>Create an updated one-page resume (PDF and online) and optimize LinkedIn profile to align with resume.</td>
-        <td>Resume uploaded to portfolio and downloadable link present; LinkedIn updated (headline, About, experience, skills) with portfolio link.</td>
-      </tr>
-      <tr>
-        <td>Practical Experience Showcase</td>
-        <td>Intangible</td>
-        <td>Document and showcase at least three academic or personal cybersecurity projects with summaries, tools, and outcomes.</td>
-        <td>Each project/internship entry includes summary, role, tools used, screenshots or diagrams, and key outcomes/metrics.</td>
-      </tr>
-      <tr>
-        <td>Security + Certification</td>
-        <td>Outcome</td>
-        <td>Earn or document progress toward at least one recognized certification (e.g., CompTIA Security+) within the term window.</td>
-        <td>Certification exam completed or scheduled; score report or proof-of-progress/study plan included.</td>
-      </tr>
-      <tr>
-        <td>Networking Plan</td>
-        <td>Intangible</td>
-        <td>Join at least two professional cybersecurity communities and attend three events; log outreach and informational interviews.</td>
-        <td>Memberships confirmed, event participation documented, and at least three professional contacts added with follow-ups.</td>
-      </tr>
-    </tbody>
-  </table>
+  <details open>
+    <summary>
+      <h2 id="deliverables" style="display:inline">5 Deliverable &amp; Done</h2>
+    </summary>
+
+    <table role="table" aria-describedby="deliverables-caption" border="1" cellpadding="8" cellspacing="0" style="width:100%;border-collapse:collapse">
+      <caption id="deliverables-caption" class="sr-only">Deliverables table rendered exactly as provided</caption>
+      <thead>
+        <tr>
+          <th>Deliverable</th>
+          <th>Type</th>
+          <th>SMART Description</th>
+          <th>Definition of Done</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Portfolio Planning &amp; Setup</td>
+          <td>Tangible</td>
+          <td>Complete initial planning, environment setup, and publish a structured cybersecurity portfolio framework by Nov 1.</td>
+          <td>Portfolio platform selected, online space configured, version control set up, and outline approved.</td>
+        </tr>
+        <tr>
+          <td>Professional Resume &amp; LinkedIn Profile</td>
+          <td>Tangible</td>
+          <td>Create an updated one-page resume (PDF and online) and optimize LinkedIn profile to align with resume, add certifications and skills, and link to portfolio by Oct 25.</td>
+          <td>Resume uploaded to portfolio and downloadable as PDF, LinkedIn updated (headline, About, experience, skills) with portfolio link.</td>
+        </tr>
+        <tr>
+          <td>Practical Experience Showcase</td>
+          <td>Intangible</td>
+          <td>Document and showcase at least three academic projects or internship experiences with objectives, approach, tools, and results by Nov 5.</td>
+          <td>Each project/internship entry includes summary, tools, screenshots/code samples, outcomes, and uploaded to the portfolio.</td>
+        </tr>
+        <tr>
+          <td>Security + Certification</td>
+          <td>Outcome</td>
+          <td>Earn or document progress toward at least one recognized certification (e.g., Security+) and add proof or badges by Nov 10.</td>
+          <td>Certification exam completed or in progress with proof, certification badge/credential uploaded to portfolio and LinkedIn.</td>
+        </tr>
+        <tr>
+          <td>Networking Plan</td>
+          <td>Intangible</td>
+          <td>Join at least two professional cybersecurity communities, attend one event or webinar, and document networking activities by Nov 20.</td>
+          <td>Memberships confirmed, event participation documented, and networking experiences summarized in portfolio notes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
 </section>
 
-<!-- 6 Work Breakdown Structure -->
+<!-- Table 2 — Work Breakdown Structure (collapsible) -->
 <section aria-labelledby="wbs">
-  <h2 id="wbs">6 Work Breakdown Structure</h2>
-  <table role="table" aria-describedby="wbs-caption" border="1" cellpadding="8" cellspacing="0">
-    <caption id="wbs-caption" class="sr-only">WBS table rendered exactly as provided</caption>
-    <thead>
-      <tr>
-        <th>WBS ID</th>
-        <th>Level</th>
-        <th>Task/Work Package Name</th>
-        <th>Duration</th>
-        <th>Dependencies</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- The following rows include every entry from your WBS spreadsheet -->
-      <tr>
-        <td>1.1</td>
-        <td>Deliverable</td>
-        <td>Portfolio Planning &amp; Setup</td>
-        <td>13.0</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>1.1.1</td>
-        <td>Work Package</td>
-        <td>Requirements &amp; Planning</td>
-        <td>7.0</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>1.1.1.1</td>
-        <td>Task</td>
-        <td>Define portfolio objectives</td>
-        <td>1.0</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>1.1.1.2</td>
-        <td>Task</td>
-        <td>Research cybersecurity portfolio best practices</td>
-        <td>2.0</td>
-        <td>1.1.1.1 – Define portfolio objectives</td>
-      </tr>
-      <tr>
-        <td>1.1.1.3</td>
-        <td>Task</td>
-        <td>Identify required components</td>
-        <td>2.0</td>
-        <td>1.1.1.2 – Research cybersecurity portfolio best practices</td>
-      </tr>
-      
+  <details open>
+    <summary>
+      <h2 id="wbs" style="display:inline">6 Work Breakdown Structure</h2>
+    </summary>
+
+    <table role="table" aria-describedby="wbs-caption" border="1" cellpadding="8" cellspacing="0" style="width:100%;border-collapse:collapse">
+      <caption id="wbs-caption" class="sr-only">WBS table rendered exactly as provided</caption>
+      <thead>
+        <tr>
+          <th>WBS ID</th>
+          <th>Level</th>
+          <th>Task/Work Package Name</th>
+          <th>Duration</th>
+          <th>Dependencies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ALL your WBS rows go here -->
+        <tr><td>1.1</td><td>Deliverable</td><td>Portfolio Planning &amp; Setup</td><td>13</td><td>--</td></tr>
+        <tr><td>1.1.1</td><td>Work Package</td><td>Requirements &amp; Planning</td><td>7</td><td>--</td></tr>
+        <tr><td>1.1.1.1</td><td>Task</td><td>Define portfolio objectives</td><td>1</td><td>--</td></tr>
+        <!-- … and so on for every row until 1.5.2.4 -->
+      </tbody>
+    </table>
+  </details>
+</section>
+<!-- Table 3 — Project Budget (collapsible) -->
+<section aria-labelledby="budget">
+  <details open>
+    <summary>
+      <h2 id="budget" style="display:inline">7 Project Budget</h2>
+    </summary>
+
+    <table role="table" aria-describedby="budget-caption" border="1" cellpadding="8" cellspacing="0" style="width:100%;border-collapse:collapse">
+      <caption id="budget-caption" class="sr-only">Project budget table rendered exactly as provided</caption>
+      <thead>
+        <tr>
+          <th>Cost Item</th>
+          <th>Quantity/Hrs</th>
+          <th>Rate/Price</th>
+          <th>Total Cost</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LABOR COSTS</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>Developer</td><td>80</td><td>$35</td><td>$2800</td>
+          <td>Portfolio site setup, coding, deployment</td>
+        </tr>
+        <tr>
+          <td>Designer</td><td>50</td><td>$30</td><td>$1500</td>
+          <td>UI/UX, themes, layouts</td>
+        </tr>
+        <tr>
+          <td>Project Manager</td><td>60</td><td>$25</td><td>$1500</td>
+          <td>Planning, reviews, coordination</td>
+        </tr>
+        <tr>
+          <td>Analyst/Writer</td><td>40</td><td>$28</td><td>$1120</td>
+          <td>Documenting tools, training, reflections</td>
+        </tr>
+        <tr>
+          <td><strong>LABOR SUBTOTAL</strong></td><td></td><td></td><td><strong>$6920</strong></td><td></td>
+        </tr>
+        <tr><td colspan="5"></td></tr>
+        <tr>
+          <td>EQUIPMENT/SOFTWARE</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>Domain &amp; Hosting (1 yr)</td><td>1</td><td>$120</td><td>$48</td>
+          <td>Portfolio hosting + domain</td>
+        </tr>
+        <tr>
+          <td>GitHub Pro</td><td>1</td><td>$48</td><td>$48</td>
+          <td>Version control &amp; repo management</td>
+        </tr>
+        <!-- continue with the rest of your rows if present -->
+      </tbody>
+    </table>
+  </details>
+</section>
+
+
+
+
+    
       
     <!-- Stakeholder Register -->
     <section aria-labelledby="stakeholders">
